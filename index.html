@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link href='style.css' rel='stylesheet' />
+    <script src='app.js'></script>
+</head>
+
+<body>
+    <div id="nav">
+        <h2 id="logo">hopAround</h2>
+        <ul id="nav-list">
+            <li id="omb" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">OMB</li>
+            <li id="sc" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">Sugar Creek</li>
+            <li id="ccc" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">Triple C</li>
+            <li id="lenny" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">Lenny Boy</li>
+            <li id="syc" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">Sycamore</li>
+            <li id="wb" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">Wooden Robot</li>
+            <li id="unk" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">Unknown</li>
+            <li id="leg" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">Legion</li>
+            <li id="bird" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">Birdsong</li>
+            <li id="noda" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">NoDa</li>
+            <li id="fr" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">Free Range</li>
+            <li id="tn" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">Thirsty Nomad</li>
+            <li id="blubl" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">Blue Blaze</li>
+            <li id="heist" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">Heist</li>
+            <li id="rescul" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">Resident Culture</li>
+            <li id="salud" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)">Salud</li>
+        </ul>
+    </div>
+
+    <div id='map'></div>
+
+    <div id="details">
+        <div id="ombDetail" class="detail">
+            <h2>The Olde Mecklenburg Brewery</h2>
+            <p>Address</p>
+            <p>Phone Number</p>
+        </div>
+
+        <div id="scDetail" class="detail">
+            <h2>Sugar Creek Brewing Company</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="cccDetail" class="detail">
+            <h2>Triple C Brewing Co.</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="lennyDetail" class="detail">
+            <h2>Lenny Boy Brewing Co.</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="sycDetail" class="detail">
+            <h2>Sycamore Brewing</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="wbDetail" class="detail">
+            <h2>Wooden Robot Brewery</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="unkDetail" class="detail">
+            <h2>The Unknown Brewing Co.</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="legDetail" class="detail">
+            <h2>Legion Brewing</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="birdDetail" class="detail">
+            <h2>Birdsong Brewing Company</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="nodaDetail" class="detail">
+            <h2>NoDa Brewing Company</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="frDetail" class="detail">
+            <h2>Free Range Brewing</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="tnDetail" class="detail">
+            <h2>Thirsty Nomad Brewing</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="blublDetail" class="detail">
+            <h2>Blue Blaze Brewing</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="heistDetail" class="detail">
+            <h2>Heist Brewery</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="resculDetail" class="detail">
+            <h2>Resident Culture Brewing</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="saludDetail" class="detail">
+            <h2>Salud Beer Shop</h2>
+            <p>More info soon</p>
+        </div>
+    </div>
+</body>
+
+</html>
