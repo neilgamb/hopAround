@@ -1,3 +1,140 @@
+body {
+  font-family: 'Special Elite', cursive;
+  -webkit-font-smoothing: antialiased;
+  margin: 0px; }
 
+main {
+  max-width: 100%; }
+  main h1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 2rem;
+    font-weight: 300;
+    z-index: 1;
+    text-align: left;
+    margin: 0px;
+    padding: 15px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); }
+  main .toggle-overlay {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 0px;
+    border: none;
+    background: transparent; }
+    main .toggle-overlay img {
+      height: 40px;
+      width: 40px;
+      padding: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      color: white;
+      border-radius: 8px;
+      transition: all .5s ease; }
+      main .toggle-overlay img:hover {
+        border: 1px solid white; }
+  main h2 {
+    margin: 0 0 50px;
+    font-size: 1.5em;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.6); }
+  main #map {
+    overflow: visible;
+    width: 100%;
+    height: 100vh; }
+
+aside {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 63px;
+  left: 0;
+  background: linear-gradient(200deg, #27156E, #6A2A88, #9F4981);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s ease;
+  z-index: 2; }
+
+.open {
+  opacity: 1;
+  visibility: visible; }
+
+nav {
+  text-align: center;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    nav ul li {
+      align-items: center;
+      flex: 1;
+      line-height: 20vh; }
+      nav ul li a {
+        font-size: 1.5em;
+        transition: all 0.5s ease;
+        display: block;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.5); }
+        nav ul li a:hover {
+          color: rgba(255, 255, 255, 0.9);
+          transform: scale(1.1); }
+          nav ul li a:hover:before {
+            visibility: visible; }
+        nav ul li a:before {
+          content: "";
+          position: absolute;
+          width: 50%;
+          height: 2px;
+          bottom: 0;
+          left: 25%;
+          background: white;
+          visibility: hidden;
+          transform: scaleX(0);
+          transition: all 0.3s ease-in-out 0s; }
+
+@media screen and (min-width: 600px) {
+  nav ul li a {
+    font-size: 3em; } }
+.close {
+  position: fixed;
+  top: 40px;
+  right: 60px;
+  color: white;
+  z-index: 3;
+  cursor: pointer;
+  font-family: sans-serif; }
+  .close span,
+  .close span:before,
+  .close span:after {
+    border-radius: 4px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: ''; }
+  .close span {
+    background: transparent; }
+  .close span:before {
+    transform: rotate(45deg); }
+  .close span:after {
+    transform: rotate(-45deg); }
+
+.outer-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 85px;
+  height: 85px;
+  cursor: pointer; }
+
+div.mapboxgl-control-container {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
