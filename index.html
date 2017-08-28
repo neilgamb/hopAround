@@ -15,32 +15,114 @@
     <main>
         <h1>hopAround<button class="toggle-overlay"><img src="tap.png"></button></h1>
         <div id="map"></div>
-
     </main>
 
 
     <aside>
         <nav>
             <ul>
-                <li><a href="#!">OMB</a></li>
-                <li><a href="#!">Sugar Creek</a></li>
-                <li><a href="#!">Triple C</a></li>
-                <li><a href="#!">Lenny Boy</a></li>
-                <li><a href="#!">Sycamore</a></li>
-                <li><a href="#!">Woodne Robot</a></li>
-                <li><a href="#!">Unknown</a></li>
-                <li><a href="#!">Legion</a></li>
-                <li><a href="#!">Birdsong</a></li>
-                <li><a href="#!">NoDa</a></li>
-                <li><a href="#!">Free Range</a></li>
-                <li><a href="#!">Thirsty Nomad</a></li>
-                <li><a href="#!">Blue Blaze</a></li>
-                <li><a href="#!">Heist</a></li>
-                <li><a href="#!">Resident Culture</a></li>
-                <li><a href="#!">Salud</a></li>
+                <li id="omb" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">OMB</a></li>
+                <li id="sc" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">Sugar Creek</a></li>
+                <li id="ccc" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">Triple C</a></li>
+                <li id="lenny" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">Lenny Boy</a></li>
+                <li id="syc" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">Sycamore</a></li>
+                <li id="wb" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">Wooden Robot</a></li>
+                <li id="unk" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">Unknown</a></li>
+                <li id="leg" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">Legion</a></li>
+                <li id="bird" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">Birdsong</a></li>
+                <li id="noda" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">NoDa</a></li>
+                <li id="fr" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">Free Range</a></li>
+                <li id="tn" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">Thirsty Nomad</a></li>
+                <li id="blubl" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">Blue Blaze</a></li>
+                <li id="heist" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">Heist</a></li>
+                <li id="rescul" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">Resident Culture</a></li>
+                <li id="salud" onmouseover="makeBig(this); openDetail(this)" onmouseout="makeNorm(this)"><a href="#!">Salud</a></li>
             </ul>
         </nav>
     </aside>
+
+    <div id="details">
+        <div id="ombDetail" class="detail">
+            <h2>The Olde Mecklenburg Brewery</h2>
+            <p>Address</p>
+            <p>Phone Number</p>
+        </div>
+
+        <div id="scDetail" class="detail">
+            <h2>Sugar Creek Brewing Company</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="cccDetail" class="detail">
+            <h2>Triple C Brewing Co.</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="lennyDetail" class="detail">
+            <h2>Lenny Boy Brewing Co.</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="sycDetail" class="detail">
+            <h2>Sycamore Brewing</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="wbDetail" class="detail">
+            <h2>Wooden Robot Brewery</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="unkDetail" class="detail">
+            <h2>The Unknown Brewing Co.</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="legDetail" class="detail">
+            <h2>Legion Brewing</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="birdDetail" class="detail">
+            <h2>Birdsong Brewing Company</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="nodaDetail" class="detail">
+            <h2>NoDa Brewing Company</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="frDetail" class="detail">
+            <h2>Free Range Brewing</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="tnDetail" class="detail">
+            <h2>Thirsty Nomad Brewing</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="blublDetail" class="detail">
+            <h2>Blue Blaze Brewing</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="heistDetail" class="detail">
+            <h2>Heist Brewery</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="resculDetail" class="detail">
+            <h2>Resident Culture Brewing</h2>
+            <p>More info soon</p>
+        </div>
+
+        <div id="saludDetail" class="detail">
+            <h2>Salud Beer Shop</h2>
+            <p>More info soon</p>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
